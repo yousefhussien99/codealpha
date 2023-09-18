@@ -1,0 +1,101 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+/* tool section */
+
+.tool-container {
+  height: 60vh;
+}
+
+.shadower {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  height: 100%;
+  position: relative;
+}
+
+.content {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 85%;
+}
+
+.intro {
+  border-bottom: solid 4px white;
+  margin-bottom: 20px;
+  padding-top: 20px;
+}
+
+.type-radios {
+  font-size: 0.9rem;
+}
+
+input[type="radio"] {
+  width: 15px;
+  height: 15px;
+}
+
+.direction input[type="radio"] {
+  width: 15px;
+  height: 15px;
+}
+
+input[type="color"] {
+  width: 50%;
+  height: 30px;
+}
+
+/* preview section */
+
+.preview-container {
+  height: 40vh;
+}
+
+/* what displays the rule */
+.color {
+  font-family: "consolas";
+  margin: 10px auto;
+  width: 80%;
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 0.8rem;
+}
+
+/* the copy button*/
+.copy {
+  border: none;
+  border-radius: 5px;
+}
+
+/* for larger screens*/
+@media (min-width: 724px) {
+  .tool-container,
+  .preview-container {
+    width: 50%;
+    height: 100vh;
+  }
+
+  .color {
+    width: 40%;
+    font-size: 1rem;
+  }
+
+  .radios {
+    font-size: 1.4rem;
+  }
+
+  .intro {
+    padding-top: 100px;
+  }
+
+  input[type="color"] {
+    width: 70%;
+  }
+
+  .type-radios {
+    font-size: 1.2rem;
+  }
+}
